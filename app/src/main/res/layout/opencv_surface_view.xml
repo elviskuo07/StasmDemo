@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <org.opencv.android.JavaCameraView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:id="@+id/opencv_java_surface_view"
+        opencv:show_fps="true"
+        opencv:camera_id="front" />
+
+    <fragment
+        android:id="@+id/adFragment"
+        android:name="org.stasmdemo.android.MainActivity$AdFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+    
+</RelativeLayout>
